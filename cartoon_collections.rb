@@ -11,7 +11,7 @@ planeteer_calls.map! {|calls| calls.capitalize + "!"}
 end
 
 def long_planeteer_calls(array)
-  array.find {|words| words.length <= 4} ? true : false
+  array.find {|words| words.length <= 4} ? false : true
 end
 
 def find_the_cheese# code an argument here
