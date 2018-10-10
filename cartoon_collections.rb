@@ -16,6 +16,6 @@ end
 
 def find_the_cheese(the_food)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  the_food.find {|cheese| cheese_types.include?(cheese)}
+  the_food.find {|cheese| the_food.include?(cheese_types)}
   if
 end
