@@ -6,13 +6,8 @@ def roll_call_dwarves(names)
   end
 end
 
-def summon_captain_planet(calls)
-  new_array = []
-  i = 0
-  while i < calls.length
-    new_array << calls[i].capitalize + "!"
-  end
-  new_array
+def summon_captain_planet(planeteer_calls)
+planeteer_calls.map! {|calls| call + "!"}
 end
 
 def long_planeteer_calls# code an argument here
